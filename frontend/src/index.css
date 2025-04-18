@@ -1,0 +1,454 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Customer Details Section */
+.customer-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.customer-details h2 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.customer-details label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.customer-details input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.customer-details button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.customer-details button:hover {
+  background-color: #218838;
+}
+
+/* Container for the whole product list */
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Each product box */
+.product-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Product name */
+.product-card h3 {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Description and price */
+.product-card p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+/* Add to Cart button */
+.product-card button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Cart Section */
+.cart-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+#cartList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cartList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#cartTotal {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+#confirmOrderBtn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#confirmOrderBtn:hover {
+  background-color: #218838;
+}
+
+/* Styling for the customer form container */
+.customer-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Heading style for customer details form */
+.customer-form-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #007bff;
+}
+
+/* Styling for the form itself */
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style for the form labels */
+.customer-form label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Input field styling */
+.customer-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Button style for submitting the form */
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Add responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .customer-form-container {
+    width: 80%;
+  }
+}
+
+/* Container for the entire cart */
+.cart-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Heading for the cart */
+.cart-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #343a40;
+}
+
+/* Individual cart item */
+.cart-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cart item text (product name and quantity) */
+.cart-item p {
+  font-size: 1rem;
+  margin: 0;
+  color: #495057;
+}
+
+/* Action buttons (update quantity and remove) */
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Style for the update quantity buttons */
+.update-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.update-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the remove button */
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* In case of empty cart */
+.cart-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #868e96;
+}
+
+/* /src/index.css */
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+
+.header {
+  position: relative;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.top-right-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.top-right-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Cart Container */
+.cart-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.update-btn, .remove-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.update-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+}
+
+.remove-btn:hover, .update-btn:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 1rem;
+}
+
